@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/verdantpath/gulp-project#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
-  }
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {}
 }
