@@ -1,9 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 
-gulp.task("hello", function() {
-  console.log("Hello!");
+gulp.task("concatScripts", function(done) {
+  gulp.src([
+    'js/jquery.js',
+    'js/sticky/jquery.sticky.js',
+    'js/main.js'
+  ])
+  .pipe(concat('app.js'))
+  .pipe(gulp.dest('js'));
+  done();
 });
 
 // gulp.task("default", ["hello"], function() {
