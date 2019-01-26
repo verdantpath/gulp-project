@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+var maps = require('gulp-sourcemaps');
 
 gulp.task("concatScripts", function(done) {
   gulp.src([
